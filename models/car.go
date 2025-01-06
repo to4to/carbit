@@ -36,7 +36,12 @@ type CarRequest struct {
 func ValidateRequest(carReq CarRequest)error{
 
 
-
+if err:=validateName(carReq.Name);err!=nil{
+	return err
+}
+if err:=validateYear(strconv.Itoa(carReq.Year)); err!=nil{
+	return err
+}
 
 	
 }
