@@ -42,6 +42,7 @@ if err:=validateName(carReq.Name);err!=nil{
 if err:=validateYear(strconv.Itoa(carReq.Year)); err!=nil{
 	return err
 }
+if err:=validateBrand(carReq.Brand);
 
 	
 }
